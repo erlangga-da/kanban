@@ -10,7 +10,7 @@ export default function Button({ label, onClick, icon, disabled=false }: ButtonP
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`bg-[--main-purple] duration-300 px-6 py-3.5 flex gap-2 items-center rounded-full text-[--white] font-bold text-sm ${disabled ? "opacity-25 cursor-not-allowed":"hover:bg-[--main-purple-hover]"}`}
+      className={`w-fit bg-[--main-purple] duration-300 px-6 py-3.5 flex gap-2 items-center rounded-full text-[--white] font-bold text-sm ${disabled ? "opacity-25 cursor-not-allowed":"hover:bg-[--main-purple-hover]"}`}
     >
       {icon}
       {label}
