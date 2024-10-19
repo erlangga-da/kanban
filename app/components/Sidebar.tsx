@@ -18,9 +18,13 @@ export default function Sidebar({ Links }: MenuProps) {
       <p className="px-6 pb-4 text-xs text-[--medium-grey] font-semibold tracking-[2.4px]">
         ALL BOARDS (3)
       </p>
-      <div className="pr-6 pb-6 overflow-y-scroll" style={{ height: "calc(100vh - (85px + 32px))" }}>
+      <div
+        className="pr-6 pb-6 overflow-y-scroll"
+        style={{ height: "calc(100vh - (85px + 32px))" }}
+      >
         {Links.map((value, index) => (
           <a
+            key={index}
             href="#"
             className={`flex gap-4 px-6 py-3 ${
               value.active
