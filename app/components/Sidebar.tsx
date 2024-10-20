@@ -19,7 +19,7 @@ export default function Sidebar({ Links }: MenuProps) {
         ALL BOARDS (3)
       </p>
       <div
-        className="pr-6 pb-6 overflow-y-scroll"
+        className="pr-6 pb-6 overflow-y-auto"
         style={{ height: "calc(100vh - (85px + 32px))" }}
       >
         {Links.map((value, index) => (

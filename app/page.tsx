@@ -12,9 +12,20 @@ export default function Home() {
           { label: "Roadmap", active: false },
         ]}
       />
-      <div className="w-screen">
+      <div className="w-screen overflow-hidden">
         <Header />
-        <Content />
+        <Content
+          TaskProps={[
+            {
+              column: "to do",
+              tasks: [
+                { label: "Build UI for onboarding flow", progress: 2 },
+                { label: "Build UI for onboarding flow", progress: 1 },
+                { label: "Build UI for onboarding flow", progress: 3 },
+              ],
+            },
+          ]}
+        />
       </div>
     </div>
   );
