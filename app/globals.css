@@ -25,7 +25,8 @@
 } */
 
 ::-webkit-scrollbar {
-  width: 18px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,13 +34,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--lines-light);
-  border-radius: 99999px;
-  border: 6px solid white;
+  background-color: var(--medium-grey);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--main-purple-hover); /* Darker color on hover */
+  background-color: var(--main-purple); /* Darker color on hover */
 }
 
 
