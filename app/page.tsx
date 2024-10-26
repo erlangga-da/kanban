@@ -1,32 +1,18 @@
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Content from "./components/Content";
+"use client";
+import { PlusIcon } from "@heroicons/react/24/outline";
+import Button from "./components/Button";
 
 export default function Home() {
   return (
-    <div className="flex font-[family-name:var(--font-plus-jakarta)]">
-      <Sidebar
-        Links={[
-          { label: "Platform Launch", active: true },
-          { label: "Marketing Plan", active: false },
-          { label: "Roadmap", active: false },
-        ]}
+    <div className="inline-flex flex-col gap-8 justify-center items-center w-full h-full">
+      <p className="text-lg font-bold text-[--medium-grey] text-center">
+        To get started. Select available board or add new board.
+      </p>
+      <Button
+        label="Add New Board"
+        onClick={() => alert("Header")}
+        icon={<PlusIcon className="size-6" />}
       />
-      <div className="w-screen overflow-hidden">
-        <Header />
-        <Content
-          TaskProps={[
-            {
-              column: "to do",
-              tasks: [
-                { label: "Build UI for onboarding flow", progress: 2 },
-                { label: "Build UI for onboarding flow", progress: 1 },
-                { label: "Build UI for onboarding flow", progress: 3 },
-              ],
-            },
-          ]}
-        />
-      </div>
     </div>
   );
 }
