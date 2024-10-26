@@ -1,0 +1,51 @@
+[
+  {
+    "label": "Platform Launch",
+    "columns": [
+      {
+        "column": "to do",
+        "tasks": [
+          {
+            "label": "Build UI for onboarding flow",
+            "progress": 2
+          },
+          {
+            "label": "Build UI for onboarding flow",
+            "progress": 1
+          },
+          {
+            "label": "Build UI for onboarding flow",
+            "progress": 3
+          }
+        ]
+      },
+      {
+        "column": "on progress",
+        "tasks": [
+          {
+            "label": "Build UI for onboarding flow",
+            "progress": 2
+          },
+          {
+            "label": "Build UI for onboarding flow",
+            "progress": 1
+          },
+          {
+            "label": "Build UI for onboarding flow",
+            "progress": 3
+          },
+          {
+            "label": "Build UI for onboarding flow",
+            "progress": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Marketing Plan"
+  },
+  {
+    "label": "Roadmap"
+  }
+]
